@@ -1,0 +1,188 @@
+* {
+    font-family: Gotham;
+    text-align: center;
+}
+
+html{
+    background-image: linear-gradient(black,#808080);
+    min-height:100%;
+}
+@font-face {
+    font-family: Gotham;
+    src: url(/static/Gotham-Font/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(/static/Gotham-Font/Gotham-Bold.otf);
+}
+
+main {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #343231, 50;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+footer{
+    position : relative;
+    bottom : 0;
+    margin-top: auto;
+}
+.btn {
+    border-radius: 15px;
+    font-weight: bold; 
+    font-size: 150%;  
+    text-align: center;
+    height: 100%;
+
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 12px 28px;
+    white-space  : nowrap;
+    overflow-x     : hidden;
+    text-overflow: ellipsis;
+}
+.btn-light {
+    background: rgba(255, 255, 255, 50%);
+    color: white;
+    width: 20%;
+
+  }
+
+  .btn-green {
+    background-color: #1DB954;
+    color: black;
+    width: 30%;
+  }
+
+
+#logo{
+    width: 200px;
+    height: 200px;
+}
+
+.select_feature{
+    border-radius: 15px;
+    font-weight: bold; 
+    font-size: 150%;  
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    padding: 12px 28px;
+    background-color: #343231;
+    color: #f9f9f9;
+    font-family: Gotham-Bold;
+    
+}
+
+.feature{
+    color: #f9f9f9;
+    white-space  : nowrap;
+    overflow-x     : hidden;
+    text-overflow: ellipsis;
+}
+
+.fixed{
+    table-layout: fixed;
+}
+
+.centered{
+    margin: 0 auto;
+    width:75%;
+}
+
+h1.align-right{
+    text-align:right;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(20%);
+  }
+  
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    width: 300px;
+    top: -40px;
+    right: 105%;
+    margin-left: -150px;
+
+    z-index:1;
+  }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+#faq{
+    height: 30px;
+    width: 30px;
+}
+
+.result_features{
+    text-transform: capitalize;
+    display: flex;
+    text-align: center;
+
+}
+
+.result_feature{
+    border-radius: 15px;
+    background: black;
+    width: 20%;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.result{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.song_title{
+    width: 25%;
+    border-radius: 15px;
+    font-size:150%;
+    padding:12px;
+
+}
+
+
+.overflow{
+    overflow:visible;
+}

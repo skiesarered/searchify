@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block main%}
+
+<h2>
+    Songs similar to {{artist}} : {{song}}
+</h2>
+<div>
+    {% for song, artist in matched_songs.items() %}
+        <div class="result">
+            {{ artist }} - {{ song }}
+        </div>
+
+        <br>
+    {% endfor %}
+</div>
+{% endblock %}

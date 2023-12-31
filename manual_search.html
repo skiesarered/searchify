@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block main%}
+<div>
+    <form class="overflow" action="/manual" method="post">
+        <table class="centered fixed">
+            {% for feature in features %}
+                <tr>
+                    <!--redo this with for loop-->
+                    
+                    <td>
+                        <h1 class="align-right feature">{{ feature.name }}</h1>  
+                    </td>
+                    <td>
+                        <select class="select_feature " name = "{{ feature.name }}" id = "{{ feature.name }}">
+                            <option value="high">High</option>
+                            <!--<option value="medium-high">Medium High</option>-->
+                            <option value="medium" selected>Medium</option>
+                            <!--<option value="medium-low">Medium Low</option>-->
+                            <option value="low">Low</option>
+                        </select>
+                        <div class="tooltip"><img src="/static/images/faq.png" alt="?" id="faq">
+                            <span class="tooltiptext">{{ feature.description }}</span>
+                        </div>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>    
+        <a href="/manual"><button class="btn btn-green" name="manual_search" type="submit">Search</button></a>
+    </form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block main%}
+<div>
+    <form action="/song" method="post">
+        <input text="text" name="song" placeholder="Enter song name" class="song_title">
+        <input text="text" name="artist" placeholder="Artist" class="song_title">
+        <a href="/song"><button class="btn btn-green" name="song_search" type="submit">Search</button></a>
+    </form>
+
+</div>
+{% endblock %}

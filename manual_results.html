@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block main%}
+<h2>
+    Results:
+</h2>
+<div class="result_features">
+    {% for feature, intensity in features.items() %}
+        <div class="result_feature">
+            {{ feature }}: {{ intensity }}
+        </div>
+    {% endfor %}
+</div>
+<div>
+    {% for song, artist in matched_songs.items() %}
+        <div class="result">
+            {{ artist }} - {{ song }}
+        </div>
+
+        <br>
+    {% endfor %}
+</div>
+{% endblock %}
